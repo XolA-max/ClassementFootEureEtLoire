@@ -3,37 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC Fulbert Chartres - Classement Football Eure-et-Loir 2024/2025</title>
-    <meta name="description" content="Suivez le FC Fulbert Chartres, leader du championnat d'Eure-et-Loir. Résultats, classement, statistiques et actualités du club pour la saison 2024/2025.">
-
-    <!-- Balises Open Graph -->
-    <meta property="og:title" content="FC Fulbert Chartres - Leader du championnat Eure-et-Loir">
-    <meta property="og:description" content="Découvrez le classement et les performances du FC Fulbert Chartres, club phare d'Eure-et-Loir.">
-    <meta property="og:image" content="https://fcfulbert-chartres.fr/images/fc-fulbert.jpg">
-    <meta property="og:url" content="https://fcfulbert-chartres.fr/classement">
-    <meta property="og:type" content="website">
-
-    <!-- Données structurées Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SportsOrganization",
-      "name": "FC Fulbert Chartres",
-      "sport": "Football",
-      "url": "https://fcfulbert-chartres.fr",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chartres",
-        "addressRegion": "Eure-et-Loir",
-        "addressCountry": "FR"
-      },
-      "memberOf": {
-        "@type": "SportsOrganization",
-        "name": "Championnat Eure-et-Loir 2024/2025"
-      }
-    }
-    </script>
-
+    <title>FC Fulbert Chartres - Classement Eure-et-Loir</title>
+    <meta name="description" content="Découvrez le classement du FC Fulbert Chartres, leader du championnat en Eure-et-Loir. Résultats, statistiques et actualités du club.">
     <style>
         * {
             margin: 0;
@@ -47,11 +18,6 @@
             color: #fff;
             min-height: 100vh;
             padding: 20px;
-        }
-
-        a:focus, button:focus {
-            outline: 3px solid #ff6b35;
-            outline-offset: 2px;
         }
 
         .container {
@@ -95,8 +61,7 @@
             box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
         }
 
-        .cta-button:hover,
-        .cta-button:focus {
+        .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
             background: #ff8555;
@@ -107,7 +72,6 @@
             border-radius: 20px;
             padding: 40px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            color: #000;
         }
 
         h2 {
@@ -195,19 +159,45 @@
             padding: 40px;
             margin-top: 40px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            color: #000;
+        }
+
+        .seo-section h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-block {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-block h3 {
+            color: #1e3c72;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .content-block p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .content-block strong {
+            color: #ff6b35;
+            font-weight: 600;
         }
 
         footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
-            opacity: 0.9;
-        }
-
-        footer a {
-            color: #ff6b35;
-            font-weight: bold;
+            opacity: 0.8;
         }
 
         @media (max-width: 768px) {
@@ -223,7 +213,11 @@
                 padding: 10px 5px;
             }
 
-            .ranking-section, .seo-section {
+            .ranking-section {
+                padding: 20px;
+            }
+
+            .seo-section {
                 padding: 20px;
             }
         }
@@ -231,93 +225,222 @@
 </head>
 <body>
     <div class="container">
-        <header role="banner">
-            <h1>⚽ <span aria-label="Football">FC Fulbert Chartres</span></h1>
-            <p class="subtitle">Leader du championnat - Saison 2024/2025</p>
-            <a href="https://fcfulbert-chartres.fr" class="cta-button" aria-label="Découvrir le site officiel du FC Fulbert Chartres">Découvrir le club officiel →</a>
+        <header>
+            <h1>⚽ FC Fulbert Chartres</h1>
+            <p class="subtitle">Leader du championnat - Saison 2025/2026</p>
+            <a href="https://fcfulbertchartres.github.io/index.html" class="cta-button">Découvrir le club officiel →</a>
         </header>
 
-        <main id="contenu-principal">
-            <section class="ranking-section" aria-labelledby="classement-titre">
-                <h2 id="classement-titre">📊 Classement Général</h2>
-                <table aria-label="Classement général du championnat d'Eure-et-Loir 2024-2025" role="table">
-                    <thead>
-                        <tr role="row">
-                            <th scope="col">#</th>
-                            <th scope="col">Équipe</th>
-                            <th scope="col" class="stats">J</th>
-                            <th scope="col" class="stats">G</th>
-                            <th scope="col" class="stats">N</th>
-                            <th scope="col" class="stats">P</th>
-                            <th scope="col" class="stats">BP</th>
-                            <th scope="col" class="stats">BC</th>
-                            <th scope="col" class="stats">Diff</th>
-                            <th scope="col" class="stats">Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="highlight">
-                            <td>1</td>
-                            <td class="team-name">🏆 FC Fulbert Chartres</td>
-                            <td class="stats">12</td>
-                            <td class="stats">9</td>
-                            <td class="stats">2</td>
-                            <td class="stats">1</td>
-                            <td class="stats">28</td>
-                            <td class="stats">10</td>
-                            <td class="stats">+18</td>
-                            <td class="stats"><span class="points">29</span></td>
-                        </tr>
-                        <!-- autres équipes identiques -->
-                    </tbody>
-                </table>
+        <div class="ranking-section">
+            <h2>📊 Classement Général</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Équipe</th>
+                        <th class="stats">J</th>
+                        <th class="stats">G</th>
+                        <th class="stats">N</th>
+                        <th class="stats">P</th>
+                        <th class="stats">BP</th>
+                        <th class="stats">BC</th>
+                        <th class="stats">Diff</th>
+                        <th class="stats">Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>1</td>
+                        <td class="team-name">🏆 FC Fulbert Chartres</td>
+                        <td class="stats">12</td>
+                        <td class="stats">9</td>
+                        <td class="stats">2</td>
+                        <td class="stats">1</td>
+                        <td class="stats">28</td>
+                        <td class="stats">10</td>
+                        <td class="stats">+18</td>
+                        <td class="stats"><span class="points">29</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="team-name">AS Mainvilliers</td>
+                        <td class="stats">12</td>
+                        <td class="stats">8</td>
+                        <td class="stats">3</td>
+                        <td class="stats">1</td>
+                        <td class="stats">24</td>
+                        <td class="stats">9</td>
+                        <td class="stats">+15</td>
+                        <td class="stats"><span class="points">27</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="team-name">FC Dreux</td>
+                        <td class="stats">12</td>
+                        <td class="stats">7</td>
+                        <td class="stats">4</td>
+                        <td class="stats">1</td>
+                        <td class="stats">22</td>
+                        <td class="stats">11</td>
+                        <td class="stats">+11</td>
+                        <td class="stats"><span class="points">25</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="team-name">US Lucé</td>
+                        <td class="stats">12</td>
+                        <td class="stats">6</td>
+                        <td class="stats">3</td>
+                        <td class="stats">3</td>
+                        <td class="stats">19</td>
+                        <td class="stats">14</td>
+                        <td class="stats">+5</td>
+                        <td class="stats"><span class="points">21</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="team-name">Vernouillet FC</td>
+                        <td class="stats">12</td>
+                        <td class="stats">5</td>
+                        <td class="stats">4</td>
+                        <td class="stats">3</td>
+                        <td class="stats">17</td>
+                        <td class="stats">13</td>
+                        <td class="stats">+4</td>
+                        <td class="stats"><span class="points">19</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="team-name">AS Nogent-le-Roi</td>
+                        <td class="stats">12</td>
+                        <td class="stats">5</td>
+                        <td class="stats">3</td>
+                        <td class="stats">4</td>
+                        <td class="stats">18</td>
+                        <td class="stats">16</td>
+                        <td class="stats">+2</td>
+                        <td class="stats"><span class="points">18</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="team-name">Entente Barjouville</td>
+                        <td class="stats">12</td>
+                        <td class="stats">4</td>
+                        <td class="stats">5</td>
+                        <td class="stats">3</td>
+                        <td class="stats">15</td>
+                        <td class="stats">14</td>
+                        <td class="stats">+1</td>
+                        <td class="stats"><span class="points">17</span></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="team-name">FC Châteaudun</td>
+                        <td class="stats">12</td>
+                        <td class="stats">4</td>
+                        <td class="stats">4</td>
+                        <td class="stats">4</td>
+                        <td class="stats">14</td>
+                        <td class="stats">15</td>
+                        <td class="stats">-1</td>
+                        <td class="stats"><span class="points">16</span></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="team-name">AS Auneau</td>
+                        <td class="stats">12</td>
+                        <td class="stats">3</td>
+                        <td class="stats">4</td>
+                        <td class="stats">5</td>
+                        <td class="stats">12</td>
+                        <td class="stats">18</td>
+                        <td class="stats">-6</td>
+                        <td class="stats"><span class="points">13</span></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="team-name">ES Jouy</td>
+                        <td class="stats">12</td>
+                        <td class="stats">2</td>
+                        <td class="stats">5</td>
+                        <td class="stats">5</td>
+                        <td class="stats">11</td>
+                        <td class="stats">19</td>
+                        <td class="stats">-8</td>
+                        <td class="stats"><span class="points">11</span></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="team-name">FC Illiers-Combray</td>
+                        <td class="stats">12</td>
+                        <td class="stats">2</td>
+                        <td class="stats">2</td>
+                        <td class="stats">8</td>
+                        <td class="stats">9</td>
+                        <td class="stats">24</td>
+                        <td class="stats">-15</td>
+                        <td class="stats"><span class="points">8</span></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="team-name">US Épernon</td>
+                        <td class="stats">12</td>
+                        <td class="stats">1</td>
+                        <td class="stats">3</td>
+                        <td class="stats">8</td>
+                        <td class="stats">8</td>
+                        <td class="stats">26</td>
+                        <td class="stats">-18</td>
+                        <td class="stats"><span class="points">6</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="margin-top: 30px; text-align: center;">
+                <p style="color: #666; margin-bottom: 15px;"><strong>Légende:</strong> J = Joués | G = Gagnés | N = Nuls | P = Perdus | BP = Buts Pour | BC = Buts Contre | Diff = Différence | Pts = Points</p>
+                <a href="https://fcfulbertchartres.github.io/pages/calendrier.html" class="cta-button">🔥 Rejoignez l'aventure FC Fulbert →</a>
+            </div>
+        </div>
 
-                <p id="legend" style="color: #333; margin-top: 15px; text-align: center;">
-                    <strong>Légende :</strong> J = Joués | G = Gagnés | N = Nuls | P = Perdus | BP = Buts Pour | BC = Buts Contre | Diff = Différence | Pts = Points
+        <div class="seo-section">
+            <h2>À propos du FC Fulbert Chartres</h2>
+            
+            <div class="content-block">
+                <h3>🏆 Le FC Fulbert, fierté de l'Eure-et-Loir</h3>
+                <p>
+                    Le <strong>FC Fulbert</strong> est bien plus qu'un simple club de football : c'est une institution sportive majeure du département de l'<strong>Eure-et-Loir</strong>. Basé à Chartres, le club incarne les valeurs du sport amateur de haut niveau et représente fièrement les couleurs de notre région.
                 </p>
-                <div style="text-align: center; margin-top: 20px;">
-                    <a href="https://fcfulbert-chartres.fr" class="cta-button" aria-label="Rejoindre le FC Fulbert Chartres">🔥 Rejoignez l'aventure FC Fulbert →</a>
-                </div>
-            </section>
+            </div>
 
-            <section class="seo-section" aria-labelledby="a-propos">
-                <h2 id="a-propos">À propos du FC Fulbert Chartres</h2>
-                <article>
-                    <h3>🏆 Le FC Fulbert, fierté de l'Eure-et-Loir</h3>
-                    <p>
-                        Le <strong>FC Fulbert</strong> est bien plus qu'un club : il incarne les valeurs du sport amateur de haut niveau en <strong>Eure-et-Loir</strong>.
-                    </p>
-                </article>
-                <article>
-                    <h3>📊 Classement et performances exceptionnelles</h3>
-                    <p>
-                        Avec <strong>29 points</strong>, le <strong>FC Fulbert Chartres</strong> domine le championnat d'<strong>Eure-et-Loir</strong> grâce à 9 victoires, 2 nuls et 1 défaite.
-                    </p>
-                </article>
-                <article>
-                    <h3>⚽ Un club ancré dans le territoire</h3>
-                    <p>
-                        Le <strong>FC Fulbert</strong> rayonne dans tout le département et rivalise avec les clubs majeurs comme <strong>AS Mainvilliers</strong> et <strong>FC Dreux</strong>.
-                    </p>
-                </article>
-                <article>
-                    <h3>🌟 Rejoignez l'aventure du FC Fulbert</h3>
-                    <p>
-                        Que vous soyez supporter, joueur ou passionné, suivez le <strong>FC Fulbert</strong> et vivez chaque match grâce à nos actualités accessibles à tous.
-                    </p>
-                </article>
+            <div class="content-block">
+                <h3>📊 Classement et performances exceptionnelles</h3>
+                <p>
+                    Cette saison, le <strong>classement</strong> du championnat témoigne de l'excellence du <strong>FC Fulbert</strong>. En tête du <strong>classement</strong> avec 29 points, notre équipe démontre sa supériorité technique et tactique face aux autres clubs de l'<strong>Eure-et-Loir</strong>. Avec 9 victoires, 2 matchs nuls et seulement 1 défaite, le <strong>FC Fulbert Chartres</strong> s'impose comme le leader incontesté.
+                </p>
+            </div>
 
-                <div style="text-align: center; margin-top: 30px;">
-                    <a href="https://fcfulbert-chartres.fr" class="cta-button" aria-label="Accéder au site officiel du FC Fulbert Chartres">🚀 Découvrir le FC Fulbert officiel →</a>
-                </div>
-            </section>
-        </main>
+            <div class="content-block">
+                <h3>⚽ Un club ancré dans le territoire</h3>
+                <p>
+                    Le <strong>FC Fulbert</strong> rayonne dans toute l'<strong>Eure-et-Loir</strong> et au-delà. Notre club rivalise avec les meilleures formations du département comme l'AS Mainvilliers, le FC Dreux ou encore l'US Lucé. Le <strong>classement</strong> actuel reflète notre engagement et notre détermination à porter haut les couleurs de Chartres et de l'<strong>Eure-et-Loir</strong>.
+                </p>
+            </div>
 
-        <footer role="contentinfo">
-            <p>© 2024 FC Fulbert Chartres - Tous droits réservés</p>
-            <p style="margin-top: 10px;">Pour plus d'informations, visitez 
-                <a href="https://fcfulbert-chartres.fr" aria-label="Visiter le site officiel du FC Fulbert Chartres">fcfulbert-chartres.fr</a>
-            </p>
+            <div class="content-block">
+                <h3>🌟 Rejoignez l'aventure du FC Fulbert</h3>
+                <p>
+                    Que vous soyez supporter, joueur en herbe ou passionné de football, le <strong>FC Fulbert</strong> vous accueille. Suivez notre parcours exceptionnel dans le <strong>classement</strong> et soutenez l'équipe qui fait briller l'<strong>Eure-et-Loir</strong> sur tous les terrains. Consultez notre site officiel pour découvrir toutes les actualités du club, les résultats en direct et les événements à venir.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://fcfulbertchartres.github.io/pages/equipe.html" class="cta-button">🚀 Découvrir le FC Fulbert officiel →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 FC Fulbert Chartres - Tous droits réservés</p>
+            <p style="margin-top: 10px;">Pour plus d'informations, visitez <a href="https://fcfulbertchartres.github.io/index.html" style="color: #ff6b35; text-decoration: none; font-weight: bold;">https://fcfulbertchartres.github.io/index.html</a></p>
         </footer>
     </div>
 </body>
