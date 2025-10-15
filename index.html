@@ -3,14 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC Fulbert Chartres - Classement</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FC Fulbert Chartres - Classement Eure-et-Loir</title>
+    <meta name="description" content="Découvrez le classement du FC Fulbert Chartres, leader du championnat en Eure-et-Loir. Résultats, statistiques et actualités du club.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+            background: #ff8555;
+        }
+
+        .ranking-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        th:first-child {
+            text-align: center;
+            width: 60px;
+        }
+
+        td {
+            padding: 15px;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #1e3c72;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .highlight {
+            background: #fff3cd !important;
+            font-weight: bold;
+        }
+
+        .highlight td {
+            color: #1e3c72;
+        }
+
+        .team-name {
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .stats {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .points {
+            background: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .seo-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .seo-section h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-block {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-block h3 {
+            color: #1e3c72;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .content-block p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .content-block strong {
+            color: #ff6b35;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 10px 5px;
+            }
+
+            .ranking-section {
+                padding: 20px;
+            }
+
+            .seo-section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>⚽ FC Fulbert Chartres</h1>
-            <p class="subtitle">Leader du championnat - Saison 2025/2026</p>
+            <p class="subtitle">Leader du championnat - Saison 2024/2025</p>
             <a href="https://fcfulbertchartres.github.io/index.html" class="cta-button">Découvrir le club officiel →</a>
         </header>
 
@@ -185,183 +402,46 @@
             </div>
         </div>
 
+        <div class="seo-section">
+            <h2>À propos du FC Fulbert Chartres</h2>
+            
+            <div class="content-block">
+                <h3>🏆 Le FC Fulbert, fierté de l'Eure-et-Loir</h3>
+                <p>
+                    Le <strong>FC Fulbert</strong> est bien plus qu'un simple club de football : c'est une institution sportive majeure du département de l'<strong>Eure-et-Loir</strong>. Basé à Chartres, le club incarne les valeurs du sport amateur de haut niveau et représente fièrement les couleurs de notre région.
+                </p>
+            </div>
+
+            <div class="content-block">
+                <h3>📊 Classement et performances exceptionnelles</h3>
+                <p>
+                    Cette saison, le <strong>classement</strong> du championnat témoigne de l'excellence du <strong>FC Fulbert</strong>. En tête du <strong>classement</strong> avec 29 points, notre équipe démontre sa supériorité technique et tactique face aux autres clubs de l'<strong>Eure-et-Loir</strong>. Avec 9 victoires, 2 matchs nuls et seulement 1 défaite, le <strong>FC Fulbert Chartres</strong> s'impose comme le leader incontesté.
+                </p>
+            </div>
+
+            <div class="content-block">
+                <h3>⚽ Un club ancré dans le territoire</h3>
+                <p>
+                    Le <strong>FC Fulbert</strong> rayonne dans toute l'<strong>Eure-et-Loir</strong> et au-delà. Notre club rivalise avec les meilleures formations du département comme l'AS Mainvilliers, le FC Dreux ou encore l'US Lucé. Le <strong>classement</strong> actuel reflète notre engagement et notre détermination à porter haut les couleurs de Chartres et de l'<strong>Eure-et-Loir</strong>.
+                </p>
+            </div>
+
+            <div class="content-block">
+                <h3>🌟 Rejoignez l'aventure du FC Fulbert</h3>
+                <p>
+                    Que vous soyez supporter, joueur en herbe ou passionné de football, le <strong>FC Fulbert</strong> vous accueille. Suivez notre parcours exceptionnel dans le <strong>classement</strong> et soutenez l'équipe qui fait briller l'<strong>Eure-et-Loir</strong> sur tous les terrains. Consultez notre site officiel pour découvrir toutes les actualités du club, les résultats en direct et les événements à venir.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://fcfulbertchartres.github.io/index.html" class="cta-button">🚀 Découvrir le FC Fulbert officiel →</a>
+            </div>
+        </div>
+
         <footer>
-            <p>© 2025 FC Fulbert Chartres - Tous droits réservés</p>
-            <p style="margin-top: 10px;">Pour plus d'informations, visitez <a href="https://fcfulbert-chartres.fr" style="color: #ff6b35; text-decoration: none; font-weight: bold;">https://fcfulbertchartres.github.io/index.html</a></p>
+            <p>© 2024 FC Fulbert Chartres - Tous droits réservés</p>
+            <p style="margin-top: 10px;">Pour plus d'informations, visitez <a href="https://fcfulbertchartres.github.io/index.html" style="color: #ff6b35; text-decoration: none; font-weight: bold;">https://fcfulbertchartres.github.io/index.html</a></p>
         </footer>
     </div>
 </body>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: #fff;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 40px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 15px 40px;
-    background: #ff6b35;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
-    background: #ff8555;
-}
-
-.ranking-section {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    color: #1e3c72;
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-thead {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
-}
-
-th {
-    padding: 15px;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.95em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-th:first-child {
-    text-align: center;
-    width: 60px;
-}
-
-td {
-    padding: 15px;
-    color: #333;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-td:first-child {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #1e3c72;
-}
-
-tbody tr:hover {
-    background: #f8f9fa;
-}
-
-.highlight {
-    background: #fff3cd !important;
-    font-weight: bold;
-}
-
-.highlight td {
-    color: #1e3c72;
-}
-
-.team-name {
-    font-weight: 600;
-    font-size: 1.05em;
-}
-
-.stats {
-    text-align: center;
-    font-weight: 600;
-}
-
-.points {
-    background: #28a745;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    table {
-        font-size: 0.85em;
-    }
-
-    th, td {
-        padding: 10px 5px;
-    }
-
-    .ranking-section {
-        padding: 20px;
-    }
-}
-</style>
 </html>
